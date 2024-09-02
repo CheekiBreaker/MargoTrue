@@ -174,7 +174,7 @@ body {
 .reviewsBlock {
   justify-content: center;
   display: flex;
-  width: 75%;
+  width: 55%;
   flex-wrap: wrap;
 }
 .reviewsImg1 {
