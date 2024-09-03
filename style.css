@@ -23,7 +23,7 @@ body {
   justify-content: center;
 }
 .topimg {
-    align-items: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -49,13 +49,19 @@ body {
   justify-content: space-evenly;
 }
 .nextpage {
-  text-decoration: none;
-  color: black;
-}
-.navstr {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 237px;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+}
+.nextpage:hover {
+  border-top: 1px solid rgb(176, 176, 255);
+  transition: all 2s 100ms;
+}
+.navstr {
   font-size: 20px;
   width: 100%;
   height: 40px;
@@ -289,4 +295,126 @@ li::before {
 }
 .social {
   margin: 5px;
+}
+
+/* Lessons page */
+.cartBackground {
+  background-color: #ebd5e1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cart {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartTitle {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+}
+.cartImg {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+.cartSumm {
+  justify-content: end;
+  display: flex;
+  align-items: center;
+}
+.cartLessonsBackground {
+  display: flex;
+  justify-content: center;
+  background-image: url(img/backlessons.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  border-radius: 0px;
+  width: 100%;
+  height: 895.094px;
+}
+.cartLessons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64%;
+  flex-wrap: wrap;
+}
+.cartLesson {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 300px;
+}
+.cartImgLesson {
+  width: 180px;
+  height: 180px;
+}
+.costBlock {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 180px;
+  height: 80px;
+  position: relative;
+  transition: top 0.5s;
+  top: 0;
+}
+.costDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: wheat;
+  position: relative;
+  top: -20px;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.cartLesson:hover > .costBlock {
+  top: -35px;
+}
+.cartLesson:hover > .cartImgLesson {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.cartLesson:hover > .costDetails {
+  visibility: visible;
+}
+.details {
+  position: relative;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: flex;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 150px;
+  margin-top: 40px;
+  padding: 10px 20px 10px 20px;
+  height: 35px;
+}
+
+.cost {
+  color: #31629f;
+}
+.cartOverview {
+  width: 170px;
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.sale {
 }
