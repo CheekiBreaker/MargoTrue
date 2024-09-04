@@ -269,7 +269,7 @@ body {
 li {
   list-style-type: none;
 }
-li::before {
+.listSpan::before {
   content: "- ";
   padding-right: 5px;
 }
@@ -406,8 +406,8 @@ li::before {
   padding: 10px 20px 10px 20px;
   height: 35px;
 }
-.details:hover{
-  background-color:#31629f ;
+.details:hover {
+  background-color: #31629f;
   color: white;
   transition: all 0.5s ease;
 }
@@ -613,10 +613,9 @@ li::before {
   color: #ff0000;
 }
 
-.popupImgBlock{
+.popupImgBlock {
   display: flex;
   height: auto;
-
 }
 .popupImage {
   width: 250px;
@@ -669,3 +668,114 @@ li::before {
   font-size: 18px;
 }
 /*  */
+
+/* about page */
+.EveryOneBlockImg {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.everyOneImg {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.forEveryone {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.forEveryoneBlock {
+  margin-top: 50px;
+  width: 75%;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+.everyoneText {
+  width: 500px;
+}
+.everyOnetitle {
+  font-family: Comfortaa;
+  font-size: 42px;
+}
+.everyoneSpan {
+  font-family: Comfortaa;
+  font-size: 14px;
+}
+.offer {
+  margin-top: 100px;
+  background-color: #ededd1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.offerTitle {
+  font-size: 30px;
+  font-family: Comfortaa;
+}
+.offerBlock {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offerImg {
+  width: 480px;
+  height: 350px;
+}
+.offerRev {
+  height: 600px;
+  align-items: center;
+  display: flex;
+}
+.offerUl {
+  width: 450px;
+}
+.offerLi {
+  list-style-type: disc;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: Comfortaa;
+}
+
+.comfort{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.comfortTitle{
+  font-family:Comfortaa;
+  font-size: 26px;
+}
+.comfortBlocks{
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comfortBlock{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.comfortBlockTitle{
+  font-weight:700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#ad23ef;
+  font-size:16px;
+}
+.comfortSpan{
+  margin-top: 25px;
+  font-family:Comfortaa;
+}
+
+
+/* about page */
