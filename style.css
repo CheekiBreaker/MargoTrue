@@ -328,6 +328,7 @@ li::before {
 .cartLessonsBackground {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-image: url(img/backlessons.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0%;
@@ -341,6 +342,7 @@ li::before {
   align-items: center;
   justify-content: center;
   width: 64%;
+  height: 600px;
   flex-wrap: wrap;
 }
 .cartLesson {
@@ -349,6 +351,7 @@ li::before {
   justify-content: center;
   align-items: center;
   width: 220px;
+  margin-right: 50px;
   height: 300px;
 }
 .cartImgLesson {
@@ -403,7 +406,11 @@ li::before {
   padding: 10px 20px 10px 20px;
   height: 35px;
 }
-
+.details:hover{
+  background-color:#31629f ;
+  color: white;
+  transition: all 0.5s ease;
+}
 .cost {
   color: #31629f;
 }
@@ -417,4 +424,248 @@ li::before {
 }
 
 .sale {
+  margin-top: 5px;
+  width: 100%;
+  background-color: #ebd5e1;
+  display: flex;
+  justify-content: center;
+  height: 400px;
 }
+.saleBlock {
+  color: white;
+  background-image: url(img/saleback.jpg);
+  width: 1000px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sale1 {
+  line-height: 1.1;
+  font-family: Impact;
+}
+.saleCost {
+  font-size: 82px;
+}
+.timer {
+  font-size: 23px;
+  font-weight: 300;
+}
+.sale2 {
+  line-height: 1.1;
+  width: 330px;
+  text-align: center;
+  font-family: Comfortaa;
+  font-size: 26px;
+}
+
+.whatUget {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getTitle {
+  text-align: center;
+  width: 75%;
+  font-size: 24px;
+  color: #7d7d7d;
+  font-family: Comfortaa;
+}
+.getHr {
+  border: 1px solid #7d7d7d;
+  width: 95%;
+}
+.getBlocks {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.getBlock {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+}
+.getBlockTitle {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: #e510ea;
+  font-style: oblique;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.getReview {
+  line-height: 1.7;
+  font-family: Comfortaa;
+  font-size: 14px;
+}
+.advantages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.advantTitle {
+  text-align: center;
+  width: 75%;
+  font-size: 24px;
+  color: #7d7d7d;
+  font-family: Comfortaa;
+}
+.advantagesHr {
+  width: 95%;
+  border: 1px solid #7d7d7d;
+}
+.advanagesBlocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+.advantageBlock {
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0; /* Начальная прозрачность */
+  transform: translateY(20px); /* Начальное смещение */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.advantageBlock.visible {
+  opacity: 1; /* Полная видимость */
+  transform: translateY(0); /* Вернуться в оригинальное положение */
+}
+.advImgBlock {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantReviewsTitle {
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-style: oblique;
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 2px;
+  font-size: 22px;
+  color: #11a3c3;
+  font-family: "Times New Roman";
+}
+.op {
+  transition: all 1s ease-in-out;
+  opacity: 100;
+}
+
+.advantReviewsSpan {
+  width: 700px;
+  font-size: 16px;
+  font-family: Comfortaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popupContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  height: auto;
+  width: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.closePopup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.popupImgBlock{
+  display: flex;
+  height: auto;
+
+}
+.popupImage {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+.popupBlock {
+  align-items: center;
+  width: 100%;
+  margin-left: 25px;
+  justify-content: space-evenly;
+  display: flex;
+}
+.popupContentBlock {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.popupName {
+  font-size: 30px;
+}
+#popupDescription {
+  text-align: left;
+  font-size: 18px;
+}
+.popupAdd {
+  width: 130px;
+  height: 40px;
+  color: #fafafa;
+  background: #31629f;
+  border-color: #31629f;
+}
+.popupAdd:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background: #5175a1;
+  border-color: #5175a1;
+}
+.costPopup {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+}
+.costDiv {
+  color: #31629f;
+  display: flex;
+  align-items: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+}
+/*  */
