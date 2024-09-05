@@ -14,14 +14,3 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-var items = document.querySelectorAll("ul.offerUl li");
-window.addEventListener("scroll", (e) => {
-  if (pageYOffset = 500) {
-    items.forEach((el, index) => {
-      el.style.opacity = 0;
-      setTimeout(() => {
-        el.style.opacity = 1;
-      }, index * 400);
-    });
-  }
-});
