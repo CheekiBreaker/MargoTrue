@@ -30,6 +30,7 @@ const popupImage = document.getElementById("popupImage");
 const popupCost = document.getElementById("popupCost");
 const closePopup = document.getElementById("closePopup");
 const detailButtons = document.querySelectorAll(".details");
+const popupAdd = document.querySelectorAll(".popupAdd");
 
 detailButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -50,6 +51,12 @@ detailButtons.forEach((button) => {
   });
 });
 
+popupAdd.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+});
+
 closePopup.addEventListener("click", () => {
   popup.style.display = "none";
 });
@@ -59,4 +66,3 @@ window.addEventListener("click", (event) => {
     popup.style.display = "none";
   }
 });
-

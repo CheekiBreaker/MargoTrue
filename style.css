@@ -954,12 +954,27 @@ li {
 /* header */
 
 @media (max-width: 768px) {
+  .navpanelBackground {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navstr {
+    font-size: 14px;
+  }
+  .nextpage {
+    width: fit-content;
+  }
+  /* .navstr {
+    width: fit-content;
+  } */
   .topimg {
     align-items: center;
     justify-content: center;
   }
   .navpanel {
-    flex-direction: column;
+    display: flex;
+    /* flex-direction: column; */
     align-items: flex-start;
     height: 100%;
   }
@@ -979,12 +994,20 @@ li {
     flex-wrap: wrap;
   }
   .lesson {
+    height: 400px;
     margin-top: 25px;
+  }
+  .more {
+    margin-top: 30px;
   }
   .speakBlock {
     flex-wrap: wrap;
   }
+  .speakSubTitle {
+    text-align: center;
+  }
   .speak {
+    height: 550px;
     width: 75%;
     margin-top: 25px;
   }
@@ -992,12 +1015,17 @@ li {
     width: fit-content;
   }
   .about {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .about1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 25px;
   }
-  .about2{
+  .about2 {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -1060,6 +1088,31 @@ li {
   .advantReviewsSpan {
     text-align: center;
     width: fit-content;
+  }
+  .popupContent {
+    height: 800px;
+    width: fit-content;
+  }
+  .popupBlock {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: scroll;
+  }
+  .popupImage {
+    padding-top: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  .popupAdd {
+    margin-left: 20px;
+  }
+  .costPopup {
+    width: fit-content;
+  }
+  .popupContentBlock {
+    height: f;
+    margin-left: 0px;
   }
   /* lessons */
   /* about */
