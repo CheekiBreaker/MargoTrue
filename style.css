@@ -906,7 +906,7 @@ li {
   justify-content: space-between;
   text-align: center;
 }
-.socialBlockText{
+.socialBlockText {
   display: flex;
   flex-direction: column;
   height: 160px;
@@ -918,7 +918,7 @@ li {
   font-size: 24px;
 }
 .socialBlockspan {
-margin-top: 15px;
+  margin-top: 15px;
   font-family: Comfortaa;
   font-size: 18px;
 }
@@ -950,3 +950,159 @@ margin-top: 15px;
   opacity: 100;
 }
 /*  */
+
+/* header */
+
+@media (max-width: 768px) {
+  .topimg {
+    align-items: center;
+    justify-content: center;
+  }
+  .navpanel {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .me {
+    margin-top: 50px;
+  }
+  .lessonsBlock {
+    flex-wrap: wrap;
+  }
+  .lesson {
+    margin-top: 25px;
+  }
+  .speakBlock {
+    flex-wrap: wrap;
+  }
+  .speak {
+    width: 75%;
+    margin-top: 25px;
+  }
+  .studentsTitle {
+    width: fit-content;
+  }
+  .about {
+    flex-wrap: wrap;
+  }
+  .about1 {
+    margin-top: 25px;
+  }
+  .about2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .aboutList {
+    width: 250px;
+    padding: 0;
+  }
+  .topTitle.Dop {
+    text-align: center;
+  }
+  .topTitle.Osn {
+    margin-left: 25px;
+    text-align: center;
+  }
+  /* lessons */
+  .cartLessonsBackground {
+    background-image: none;
+    background-color: #f5e6ee;
+    height: 100%;
+  }
+  .cartLesson {
+    margin: 0;
+  }
+  .sale {
+    margin-top: 1500px;
+  }
+  .sale1 {
+    margin-left: 10px;
+    text-align: center;
+  }
+  .saleBlock {
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+  .sale2 {
+    width: fit-content;
+  }
+
+  .saleInput {
+    width: 50px;
+  }
+  .saleCost {
+    font-size: 40px;
+  }
+  .getTitle {
+    text-align: center;
+    font-size: 20px;
+  }
+  .getBlock {
+    margin-top: 65px;
+  }
+  .advantTitle {
+    width: fit-content;
+    font-size: 18px;
+  }
+  .advantReviewsTitle {
+    text-align: center;
+  }
+  .advantReviewsSpan {
+    text-align: center;
+    width: fit-content;
+  }
+  /* lessons */
+  /* about */
+  .forEveryoneBlock {
+    flex-wrap: wrap;
+  }
+  .offerBlock {
+    flex-wrap: wrap;
+  }
+  .offerTitle {
+    text-align: center;
+  }
+  .offerImg {
+    width: 300px;
+    height: 300px;
+  }
+  .offerRev {
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+  }
+  .everyOneImg {
+    width: 200px;
+    height: 200px;
+  }
+  .comfort {
+    text-align: center;
+  }
+  .comfortBlock {
+    width: 300px;
+  }
+  .comfortBlocks {
+    margin: 0;
+  }
+
+  /* about */
+  /* contacts */
+  .socialBlock {
+    height: 300px;
+  }
+
+  /* contacts */
+}
