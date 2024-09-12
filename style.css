@@ -638,8 +638,8 @@ li {
 
 .closePopup {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 50px;
+  right: 50px;
   cursor: pointer;
   color: #ff0000;
 }
@@ -1100,7 +1100,7 @@ li {
     overflow: scroll;
   }
   .popupImage {
-    padding-top: 100px;
+    padding-top: 50px;
     width: 150px;
     height: 150px;
   }
