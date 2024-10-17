@@ -638,8 +638,8 @@ li {
 
 .closePopup {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 80px;
+  right: 70px;
   cursor: pointer;
   color: #ff0000;
 }
